@@ -10,4 +10,5 @@ int max(int a[], int count)
  max=a[i];
  }
  }
+ return max;
  }
