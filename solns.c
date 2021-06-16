@@ -33,6 +33,9 @@ float average(int a[],int count)
   {
   sum=sum+a[i];
   }
+ avg=(float)sum/(count);
+  return avg;
+  }
  
  int mode(int a[], int c)
   {
@@ -54,6 +57,4 @@ float average(int a[],int count)
         }
         return mode;
         }
-  avg=(float)sum/(count);
-  return avg;
-  }
+  
