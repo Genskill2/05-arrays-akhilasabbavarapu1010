@@ -33,6 +33,27 @@ float average(int a[],int count)
   {
   sum=sum+a[i];
   }
+ 
+ int mode(int a[], int c)
+  {
+  int count=0,maxcount=0,mode=0;
+  for(int i=0;i<c;i++)
+  {
+     for(int j=0;j<c;j++)
+     {
+        if(a[j]==a[i])
+        {
+        count++;
+        }
+        }
+        if(count>maxcount)
+        {
+        maxcount=count;
+        mode=a[i];
+        }
+        }
+        return mode;
+        }
   avg=(float)sum/(count);
   return avg;
   }
