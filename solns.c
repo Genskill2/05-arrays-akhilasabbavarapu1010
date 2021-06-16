@@ -12,3 +12,15 @@ int max(int a[], int count)
  }
  return max;
  }
+
+int min(int a[], int count)
+{
+ int min=a[0];
+ for(int i=0;i<count;i++)
+ {
+ if(a[i]<min){
+ min=a[i];
+ }
+ }
+ return min;
+ }
