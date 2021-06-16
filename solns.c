@@ -24,3 +24,15 @@ int min(int a[], int count)
  }
  return min;
  }
+
+float average(int a[],int count)
+  {
+  int  sum=0;
+  float avg;
+  for(int i=0;i<count;i++)
+  {
+  sum=sum+a[i];
+  }
+  avg=(float)sum/(count);
+  return avg;
+  }
