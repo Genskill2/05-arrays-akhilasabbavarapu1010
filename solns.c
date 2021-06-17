@@ -57,4 +57,20 @@ float average(int a[],int count)
         }
         return mode;
         }
+
+int factors(int c,int f[])
+ {
+ 
+ int i,count=0;
+ for( i=2;i<=c;i++)
+ {
+ while(c%i==0)
+ {
+  f[count]=i;
+  count++;
+  c=c/i;
+ }
+ }
+ return count;
+ }
   
